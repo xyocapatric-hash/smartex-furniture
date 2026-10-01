@@ -4,3 +4,7 @@ requests==2.34.2
 gunicorn
 pydub==0.25.1
 
+psycopg2-binary
+psycopg2-binary
+
+postgresql://smartex_db_ouav_user:EhDqAjC23DY4M0i5MV7qTRniS7WVp7mn@dpg-dav8ld142hec73842v9g-a/smartex_db_ouav

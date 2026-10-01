@@ -6,7 +6,7 @@ from models import db, Furniture, Order
 # --- 1. CONFIGURATION ---
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'smartex_secret_key_2026'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///smartex.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///smartex.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['UPLOAD_FOLDER'] = 'static/uploads'
 
